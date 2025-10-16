@@ -1,25 +1,26 @@
-Demo Video:
-  https://drive.google.com/file/d/1pHBy65ra9rifJUnErDkSdtGxb__AAxNF/view?usp=sharing
+Demo Video: https://drive.google.com/file/d/1pHBy65ra9rifJUnErDkSdtGxb__AAxNF/view?usp=sharing
 
-# 🧠 Smart Resume Screener
+project_name: Smart Resume Screener
 
-An AI powered application that compares a candidate’s resume with a job description and generates a compatibility score with explanations.
+description: >
+  An AI-powered application that compares a candidate's resume with a job description
+  and generates a compatibility score with explanation, strengths, and weaknesses.
 
-Tech Stack:
-  Backend: FastAPI (Python)
-  Frontend: Streamlit
-  Parsing: pdfplumber, spaCy
-  Scoring: Rule based (optional OpenAI GPT integration)
+tech_stack:
+  backend: FastAPI (Python)
+  frontend: Streamlit
+  parsing: pdfplumber, spaCy
+  scoring: Rule-based (optional OpenAI GPT integration)
 
-Architecture:
-  Flow:
+architecture:
+  flow:
     - Resume (PDF or Text)
     - parser.py: extracts name, skills, experience, and education
     - scorer.py: compares candidate data with JD and calculates score
     - backend/app.py: FastAPI server exposing /upload_resume and /score endpoints
     - frontend/app.py: Streamlit web interface for uploading resume and displaying results
 
-Example LLM Prompt: |
+example_llm_prompt: |
   You are an assistant that evaluates how well a candidate fits a job description.
   Given the candidate JSON and JD JSON, return JSON with:
     score: 0–10
@@ -28,9 +29,9 @@ Example LLM Prompt: |
     strengths: []
     weaknesses: []
 
-Run Locally:
+run_locally: |
   - Clone repository:
-      git clone https://github.com/<your-username>/Smart-Resume-Screener.git
+      git clone https://github.com/PranavYugan/Smart-Resume-Screener.git
       cd Smart-Resume-Screener
   - Setup environment:
       python -m venv venv
@@ -42,8 +43,12 @@ Run Locally:
   - Start frontend:
       streamlit run frontend/app.py
 
-Author:
-  Name: Pranav Yugan R
-  Email: pranavyugan.r2022@vitstudent.ac.in
-  LinkedIn: https://www.linkedin.com/in/pranav-yugan/
-  GitHub: https://github.com/PranavYugan
+notes:
+  - Do not commit the venv folder or any secrets. Add .env to .gitignore if present.
+  - If you want OpenAI-based semantic scoring, add OPENAI_API_KEY to a .env file.
+
+author:
+  name: Pranav Yugan R
+  email: pranavyugan.r2022@vitstudent.ac.in
+  linkedin: https://www.linkedin.com/in/pranav-yugan/
+  github: https://github.com/PranavYugan
