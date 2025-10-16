@@ -1,3 +1,6 @@
+Demo Video:
+  https://drive.google.com/file/d/1pHBy65ra9rifJUnErDkSdtGxb__AAxNF/view?usp=sharing
+
 # 🧠 Smart Resume Screener
 
 An AI powered application that compares a candidate’s resume with a job description and generates a compatibility score with explanations.
@@ -38,9 +41,6 @@ Run Locally:
       uvicorn backend.app:app --reload
   - Start frontend:
       streamlit run frontend/app.py
-
-Demo Video:
-  Paste your Google Drive video link here.
 
 Author:
   Name: Pranav Yugan R
