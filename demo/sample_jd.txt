@@ -1,0 +1,6 @@
+Job Title: Backend Engineer
+
+We need a backend engineer with 3+ years of experience in Python, FastAPI, Docker, and PostgreSQL.
+Required: Python, FastAPI, Docker, PostgreSQL
+Preferred: NLP, CI/CD
+Minimum experience: 3 years
